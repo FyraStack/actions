@@ -2,6 +2,11 @@ name: mirror
 
 on:
   workflow_call:
+    secrets:
+      GIT_USERNAME:
+        required: true
+      GIT_PASSWORD:
+        required: true
 
 permissions:
   contents: read
